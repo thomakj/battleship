@@ -1,5 +1,5 @@
 import unittest
-from app.player import Player
+from ..app.player import Player
 
 class TestPlayer(unittest.TestCase):
 
@@ -7,7 +7,7 @@ class TestPlayer(unittest.TestCase):
 
     def test_player_name_on_object_creation(self):
         self.player = Player("Tester Testersen")
-        player_name = self.get_name()
+        player_name = self.player.get_name()
         self.assertEqual("Tester Testersen", player_name)
 
 if __name__ == '__main__':
